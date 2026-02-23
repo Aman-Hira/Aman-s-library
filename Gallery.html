@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Aman Hira</title>
+    <style>
+        body { background: #000; color: #fff; font-family: sans-serif; margin: 0; }
+        nav { padding: 20px; position: sticky; top: 0; background: rgba(0,0,0,0.8); backdrop-filter: blur(5px); z-index: 10; }
+        nav a { color: #fff; text-decoration: none; font-size: 0.9rem; border: 1px solid #333; padding: 5px 15px; border-radius: 20px; }
+        
+        .gallery-container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 15px;
+            column-count: 2; /* Creates a modern masonry look */
+            column-gap: 15px;
+        }
+        .gallery-container img {
+            width: 100%;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            display: block;
+        }
+        h2 { text-align: center; font-weight: 300; margin-top: 40px; }
+        
+        @media (max-width: 600px) {
+            .gallery-container { column-count: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">← Back to Profile</a>
+    </nav>
+
+    <h2>High Resolution Library</h2>
+
+    <div class="gallery-container">
+        <img src="highres1.jpg" alt="Cinema Shot 1">
+        <img src="highres2.jpg" alt="Cinema Shot 2">
+        <img src="highres3.jpg" alt="Cinema Shot 3">
+        <img src="highres4.jpg" alt="Cinema Shot 4">
+        <img src="highres5.jpg" alt="Cinema Shot 5">
+        <img src="highres6.jpg" alt="Cinema Shot 6">
+    </div>
+
+</body>
+</html>
